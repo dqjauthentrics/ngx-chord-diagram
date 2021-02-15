@@ -1,0 +1,48 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "ngx-chord-diagram": {
+      "projectType": "library",
+      "root": "projects/ngx-chord-diagram",
+      "sourceRoot": "projects/ngx-chord-diagram/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/ngx-chord-diagram/tsconfig.lib.json",
+            "project": "projects/ngx-chord-diagram/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-chord-diagram/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-chord-diagram/src/test.ts",
+            "tsConfig": "projects/ngx-chord-diagram/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-chord-diagram/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-chord-diagram/tsconfig.lib.json",
+              "projects/ngx-chord-diagram/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "ngx-chord-diagram"
+}
