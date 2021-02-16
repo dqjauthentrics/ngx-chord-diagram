@@ -31,7 +31,7 @@ In your Angular template:
 <chord-diagram [chordSpec]="chordSpec"></chord-diagram>
 ```
 ## Examples
-![Demo page image](src/assets/Chord_Diagram_Demo.png?raw=true "Title")
+![Demo page image](https://github.com/dqjauthentrics/ngx-chord-diagram/blob/master/projects/ngx-chord-diagram/src/assets/Chord_Diagram_Demo.png?raw=true "Title")
 ## Styling
 To control the size of diagrams, use CSS for canvas elements with 'chord-diagram' class, or via the parent.  E.g.,
 ```
