@@ -5,11 +5,11 @@ fretboard.  The number of items in the given array of positions indicates the
 number of strings to be represented, so it can be used for 3 and 4 string cigar boxes, mandolins, 
 ukuleles and other instruments.
 
-##Installation
+## Installation
 ```
 npm install --save @authentrics/ngx-chord-diagram
 ```
-##Usage
+## Usage
 The position array is simple the list of finger positions, starting from the lowest string to the highest.
 Use a -1 for strings that are not played, and a 0 for those that are played open.
 
@@ -30,9 +30,9 @@ In your Angular template:
 ```
 <chord-diagram [chordSpec]="chordSpec"></chord-diagram>
 ```
-##Examples
+## Examples
 ![Demo page image](Chord_Diagram_Demo.png?raw=true "Title")
-##Styling
+## Styling
 To control the size of diagrams, use CSS for canvas elements with 'chord-diagram' class, or via the parent.  E.g.,
 ```
 #chordArea2 canvas {
