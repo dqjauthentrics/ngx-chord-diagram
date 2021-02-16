@@ -1,5 +1,5 @@
 {
-  "name": "ngx-chord-diagram",
+  "name": "@authentrics/ngx-chord-diagram",
   "version": "0.0.2",
   "scripts": {
     "ng": "ng",
@@ -41,5 +41,25 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dqjauthentrics/ngx-chord-diagram.git"
+  },
+  "keywords": [
+    "guitar",
+    "chord",
+    "diagram",
+    "string",
+    "instruments",
+    "fretboard"
+  ],
+  "author": "David Quinn-Jacobs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dqjauthentrics/ngx-chord-diagram/issues"
+  },
+  "homepage": "https://github.com/dqjauthentrics/ngx-chord-diagram#readme"
 }
