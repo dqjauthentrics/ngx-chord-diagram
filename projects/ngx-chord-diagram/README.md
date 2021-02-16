@@ -1,24 +1,44 @@
 # NgxChordDiagram
+This module builds on [@authentrics/chord-diagram](https://www.npmjs.com/package/@authentrics/chord-diagram) to provide an Angular
+tag, **<chord-diagram>**, to display finger positions on a stringed instrument
+fretboard.  The number of items in the given array of positions indicates the
+number of strings to be represented, so it can be used for 3 and 4 string cigar boxes, mandolins, 
+ukuleles and other instruments.
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
+##Installation
+```
+npm install --save @authentrics/ngx-chord-diagram
+```
+##Usage
+The position array is simple the list of finger positions, starting from the lowest string to the highest.
+Use a -1 for strings that are not played, and a 0 for those that are played open.
 
-## Code scaffolding
-
-Run `ng generate component component-name --project ngx-chord-diagram` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-chord-diagram`.
-> Note: Don't forget to add `--project ngx-chord-diagram` or else it will be added to the default project in your `angular.json` file. 
-
-## Build
-
-Run `ng build ngx-chord-diagram` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Publishing
-
-After building your library with `ng build ngx-chord-diagram`, go to the dist folder `cd dist/ngx-chord-diagram` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test ngx-chord-diagram` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+In your component, or app module:
+```
+import {NgxChordDiagramModule} from '@authentrics/ngx-chord-diagram';
+import {ChordDiagramInterface} from '@authentrics/chord-diagram/dist/chord-diagram.interface'
+...
+public chordSpec: Partial<ChordDiagramInterface> = {
+  parentElement: document.getElementById('chordArea'),
+  name: 'D',
+  positions: [-1, -1, 0, 2, 3, 2],
+  color: 'navy',
+  dotColor: '#AAA'
+}
+```
+In your Angular template:
+```
+<chord-diagram [chordSpec]="chordSpec"></chord-diagram>
+```
+##Examples
+![Demo page image](Chord_Diagram_Demo.png?raw=true "Title")
+##Styling
+To control the size of diagrams, use CSS for canvas elements with 'chord-diagram' class, or via the parent.  E.g.,
+```
+#chordArea2 canvas {
+    max-height: 120px;
+}
+canvas.chord-diagram {
+    max-height: 180px;
+}
+```
