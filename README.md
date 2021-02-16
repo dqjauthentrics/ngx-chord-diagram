@@ -6,4 +6,4 @@ The build artifacts will be stored in the `dist/` directory.
 
 ## Publish
 To re-publish after a build, go to the dist/ngx-chord-diagram directory
-and run npm publish.
+and run `npm publish --access=public`.
