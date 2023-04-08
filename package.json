@@ -1,6 +1,6 @@
 {
   "name": "@authentrics/ngx-chord-diagram",
-  "version": "0.0.5",
+  "version": "0.0.9",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,7 +19,7 @@
     "@angular/platform-browser-dynamic": "^15.2.6",
     "@angular/router": "^15.2.6",
     "rxjs": "~6.6.0",
-    "tslib": "^2.0.0",
+    "tslib": "^2.4.1",
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
