@@ -1,6 +1,6 @@
 {
   "name": "@authentrics/ngx-chord-diagram",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "private": false,
   "peerDependencies": {
     "@angular/common": "^15.2.6",
