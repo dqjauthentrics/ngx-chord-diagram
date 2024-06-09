@@ -1,13 +1,13 @@
 {
   "name": "@authentrics/ngx-chord-diagram",
-  "version": "0.0.9",
+  "version": "0.0.15",
   "private": false,
   "peerDependencies": {
     "@angular/common": "^15.2.6",
     "@angular/core": "^15.2.6"
   },
   "dependencies": {
-    "@authentrics/chord-diagram": "0.0.3",
+    "@authentrics/chord-diagram": "0.0.5",
     "tslib": "^2.4.0"
   }
 }
